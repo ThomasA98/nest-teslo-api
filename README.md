@@ -8,3 +8,4 @@
 2. Crear archivo `.env` en base a `.env.template`
 3. Up DB `docker compose up -d`
 4. levantar DEV server `pnpm start:dev`
+5. Execute seed `GET http://localhost:3000/api/seed`

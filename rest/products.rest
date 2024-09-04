@@ -2,11 +2,12 @@ POST http://localhost:3000/api/products HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Blue Shirt 6",
+    "title": "Blue Shirt 8",
     "sizes": [ "SM", "M", "L" ],
     "gender": "men",
-    "price": 152.3,
-    "tags": ["hola"]
+    "price": 40.99,
+    "tags": ["hola"],
+    "images": ["url1.jpg", "url2.jpg"]
 }
 
 ###
@@ -15,16 +16,19 @@ GET http://localhost:3000/api/products?limit=10 HTTP/1.1
 
 ###
 
-GET http://localhost:3000/api/products/e9c4abeb-834f-4c41-acf1-b0fb548a0bef HTTP/1.1
+GET http://localhost:3000/api/products/4f6a194d-b0d2-47d8-a8b5-83f9404947a1 HTTP/1.1
 
 ###
-DELETE http://localhost:3000/api/products/9ad66036-e644-44e8-9b4b-9d85f82c0196 HTTP/1.1
+DELETE http://localhost:3000/api/products/4f6a194d-b0d2-47d8-a8b5-83f9404947a1 HTTP/1.1
 
 ###
 
-PATCH http://localhost:3000/api/products/e9c4abeb-834f-4c41-acf1-b0fb548a0bef HTTP/1.1
+PATCH http://localhost:3000/api/products/4f6a194d-b0d2-47d8-a8b5-83f9404947a1 HTTP/1.1
 Content-Type: application/json
 
 {
-    "price": 89.66
+    "images": [
+        "image1.jpg",
+        "image2.webp"
+    ]
 }
