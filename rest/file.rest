@@ -1,0 +1,1 @@
+GET http://localhost:3000/api/files/product/1473809-00-A_1_2000.jpg HTTP/1.1
