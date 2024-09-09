@@ -13,6 +13,16 @@ POST http://localhost:3000/api/auth/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email": "johnDoe@gmail.com",
+    "email": "test1@gmail.com",
     "password": "Abc123"
 }
+
+###
+
+GET http://localhost:3000/api/auth/private3 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAzN2RkYjc3LTFlYmMtNDhjMS1hYmU5LTdhZjEyYjZiYmI0YyIsImlhdCI6MTcyNTkxNjAyNiwiZXhwIjoxNzI1OTIzMjI2fQ.xfVFBweHozRqTraer_WfqdXk06S5HosaXt9T6cj5e-E
+
+###
+
+GET http://localhost:3000/api/auth/check-auth-status HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAzN2RkYjc3LTFlYmMtNDhjMS1hYmU5LTdhZjEyYjZiYmI0YyIsImlhdCI6MTcyNTkxNTkwNywiZXhwIjoxNzI1OTIzMTA3fQ.Oau0T2iIQPOEfupA1SpcICkGtdoQVAZFf3gS0maMr_E

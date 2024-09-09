@@ -1,5 +1,6 @@
 POST http://localhost:3000/api/products HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0MGFhMTBlLTQ4N2ItNDY5Yy04YjVhLThhYzExZmQzNDZhMyIsImlhdCI6MTcyNTkwNjEzNiwiZXhwIjoxNzI1OTEzMzM2fQ.WenUeJkphn-_lPAI7ArNFlqYK4LkGmRZ4zCc2efI4og
 
 {
     "title": "Blue Shirt 8",
@@ -16,7 +17,7 @@ GET http://localhost:3000/api/products?limit=10 HTTP/1.1
 
 ###
 
-GET http://localhost:3000/api/products/4f6a194d-b0d2-47d8-a8b5-83f9404947a1 HTTP/1.1
+GET http://localhost:3000/api/products/2fe48e3e-fa7e-47d4-8443-09fc78bad083 HTTP/1.1
 
 ###
 DELETE http://localhost:3000/api/products/4f6a194d-b0d2-47d8-a8b5-83f9404947a1 HTTP/1.1
