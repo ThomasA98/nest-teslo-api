@@ -18,7 +18,6 @@ export class MessagesWsGateway implements OnGatewayConnection, OnGatewayDisconne
   ) {}
 
   async handleConnection(client: Socket, /* ...args: any[] */) {
-    // console.log('Client connected:', client.id);
 
     const token = client?.handshake?.headers?.authentication ?? '';
 
@@ -30,7 +29,6 @@ export class MessagesWsGateway implements OnGatewayConnection, OnGatewayDisconne
       return;
     }
 
-    // console.log({payload});
     this.wss.emit(
       'clients-updated',
       this.messagesWsService.getConnectedClients()
@@ -38,7 +36,6 @@ export class MessagesWsGateway implements OnGatewayConnection, OnGatewayDisconne
   }
 
   handleDisconnect(client: Socket) {
-    // console.log('Client disconnected:', client.id);
     this.messagesWsService.removeClient(client.id);
 
     this.wss.emit(
